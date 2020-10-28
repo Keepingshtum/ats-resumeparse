@@ -1,0 +1,9 @@
+Having 3 years of relevant experience as Data Scientist in creating working models.
+Good practical knowledge in different supervised and unsupervised learning techniques such as parametric/non-parametric algorithms, support vector machines, kernels, clustering and dimensionality reduction (PCA, LDA).
+Good knowledge and understanding in different regression, classification, clustering techniques. 
+Extensive experience in Importing, Cleaning, Manipulating, Summarizing the data and Building machine learning Regression models and data pipelines. 
+Experience in skills Pandas, NumPy, Matplotlib and Scikit-learn to load manipulate analyse and visualize data sets using Python.
+Worked on Jupyter Notebook, Spyder IDE and Google Colab.
+Experienced with machine learning algorithm such as logistic regression, KNN, SVM, random forest, linear regression, k-means clustering, Decision Tree, Random forest, Deep Reinforcement learning. 
+Evaluated models using Cross Validation, Log loss function, ROC curves and used AUC for feature selection. 
+Excellent communication skills. Successfully working in fast-paced multitasking environment both independently and in collaborative team, a self-motivated enthusiastic learner.

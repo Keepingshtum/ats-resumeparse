@@ -1,0 +1,60 @@
+https://www.geeksforgeeks.org/python-pandas-dataframe-rank/
+
+Data set:
+4 columns- total score,skill based exp(skills score and the exp twice),total exp,uni ranking,company ranking....(age,gender)
+
+order based on:
+1.total score.
+2.skill based exp.
+3.total exp.
+4.uni ranking.
+5.company ranking.
+
+max score for each field 10.
+default is 4(if not found).
+
+SPLIT:
+
+FIRST PHASE:
+1.existing resume details to be uploaded into database/csv.(id)(total experience,university name, company ranking,experince in usa, location)
+
+
+SECOND PHASE;
+1.process the existing resume with skilled experince and spacy skill extraction.
+2.Score is based on skill based exp and skills scored.
+3.Ranking will be based on this cumulative score^^.(first step).
+??How much importance should be given to the uni ranking and company ranking??(can it be used to only seperate ppl with same cumulative score , or more imp should be given?)
+
+
+Technologies to be used: Pandas dataframe.rank() or series.rank()
+
+PREQUISITES:
+1.university ranking.(rohit)
+2.company ranking.(rohit)
+3.change in points system for half and full scores (praneeth).
+4.algorithm for score extraction(total score will be out of 10 (5 max for all skills met and 5 if experince criteria (x + 10 years) 3 if experince( x + 5) 3 if experince is (x) 1 for exp(x)
+
+https://stackoverflow.com/questions/35917953/ranking-algorithms-in-python 
+
+mlab: username: mpvinod, password: Password@123
+
+Approach:
+1.We calculate on two factors.(skill based exp requirement (1 or 0) score [0-5])(if>>4 section 1)
+2.if its 1 in section 1 otherwise section 2.
+3.30 to uni 30 to company 40 to his overall experience.(rank them based on their skills).
+
+Discussion:
+1.Data to be saved in database.
+2.Company and univerity to be directly specified by users.
+3.dynamically s.e,s.c and total exp will be gathered.
+4.intermediate data to be saved in csv file format.
+5.job description.
+
+WE DEFINITELY REQUIRE A JAVASCRIPT DEV WITH COMMUNICATION SKILLS.
+
+
+
+
+
+
+
