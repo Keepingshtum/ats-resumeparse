@@ -1,0 +1,40 @@
+attrs==19.3.0
+blis==0.4.1
+brotlipy==0.7.0
+catalogue==1.0.0
+certifi==2020.12.5
+cffi==1.14.0
+chardet==3.0.4
+cryptography==2.9.2
+cymem @ file:///D:/bld/cymem_1591801266669/work
+docx==0.2.4
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.0/en_core_web_sm-2.3.0.tar.gz
+idna==2.9
+importlib-metadata @ file:///D:/bld/importlib-metadata_1591451928112/work
+jsonschema==3.2.0
+lxml==4.5.1
+murmurhash==1.0.0
+numpy @ file:///D:/bld/numpy_1591485511025/work
+pandas @ file:///C:/ci/pandas_1608056614942/work
+Pillow==7.1.2
+plac==0.9.6
+preshed @ file:///D:/bld/preshed_1591802317560/work
+pycparser==2.20
+pyOpenSSL==19.1.0
+pyrsistent==0.16.0
+PySocks==1.7.1
+python-dateutil @ file:///home/ktietz/src/ci/python-dateutil_1611928101742/work
+python-docx==0.8.10
+pytz @ file:///tmp/build/80754af9/pytz_1612215392582/work
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1592425495151/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
+spacy @ file:///D:/bld/spacy_1592385243743/work
+srsly @ file:///D:/bld/srsly_1589222535061/work
+thinc @ file:///D:/bld/thinc_1590400627616/work
+tika==1.24
+tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1591181521996/work
+urllib3==1.25.9
+wasabi @ file:///home/conda/feedstock_root/build_artifacts/wasabi_1592819210112/work
+win-inet-pton==1.1.0
+wincertstore==0.2
+zipp==3.1.0
