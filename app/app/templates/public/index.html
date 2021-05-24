@@ -1,0 +1,36 @@
+{% extends "public/templates/public_template.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block main %}
+
+<div class ="container">
+    <form class="login100-form validate-form"  method="POST" enctype="multipart/form-data">
+
+      <span class="login100-form-title align-self-center">
+
+        <h1 >Resume Parser </h1>
+
+      </span>
+      <div class="container align-self-start ">
+        <div class="file-upload-wrapper" style="border: 2px dashed black">
+          <br>
+          <h3>Drag and Drop or Choose a file! </h3>
+          
+          <input type="file" id="input-file-now" class="file-upload" />
+          <br>
+          <br>
+        </div>
+      </div>
+      
+
+      <button type="submit" class="btn-outline-danger">
+
+        Upload file
+
+      </button>
+
+    </form>
+</div>
+
+{% endblock %}
