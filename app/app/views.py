@@ -5,7 +5,7 @@ import os
 
 from flask import render_template,request,redirect,flash
 
-UPLOAD_FOLDER = "/home/anant/ats-resumeparse/uploads/"
+UPLOAD_FOLDER = os.getcwd()+"/uploads"
 test = "./"
 
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
