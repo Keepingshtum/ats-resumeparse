@@ -2,6 +2,7 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
   margin:0;
 }
 

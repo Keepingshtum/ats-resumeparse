@@ -23,9 +23,10 @@ def index():
             filename = secure_filename(file.filename)
             print(file,filename)
             if file.filename =="":
-                print("No file selected")
+                flash("No file selected")
                 return redirect(request.url)
             file.save(os.path.join(app.config["UPLOAD_FOLDER"],filename))
+            flash("File upload successful!")
             return redirect(request.url)
         else:
             print("Oops")
