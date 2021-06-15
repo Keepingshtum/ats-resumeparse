@@ -2,8 +2,12 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
   margin:0;
+}
+
+nav {
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
 }
 
 .container {
