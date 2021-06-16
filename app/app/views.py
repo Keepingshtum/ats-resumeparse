@@ -1,6 +1,8 @@
 from werkzeug.utils import secure_filename
 from app import app
 
+import pandas as pd
+
 import os
 
 from flask import render_template,request,redirect,flash
@@ -23,9 +25,10 @@ def index():
             filename = secure_filename(file.filename)
             print(file,filename)
             if file.filename =="":
-                print("No file selected")
+                flash("No file selected")
                 return redirect(request.url)
             file.save(os.path.join(app.config["UPLOAD_FOLDER"],filename))
+            flash("File upload successful!")
             return redirect(request.url)
         else:
             print("Oops")
@@ -34,10 +37,7 @@ def index():
 
     return render_template("public/index.html")
 
-@app.route("/about")
-def about():
-    return """
-    <h1 style='color: red;'>I'm a red H1 heading!</h1>
-    <p>This is a lovely little paragraph</p>
-    <code>Flask is <em>awesome</em></code>
-    """
+@app.route("/admin")
+def admin():
+    table = pd.read_csv(os.path.join( os.getcwd(), 'after_rank.csv' ))
+    return render_template("public/templates/empty.html", data=table.to_html())
