@@ -37,7 +37,21 @@ def index():
 
     return render_template("public/index.html")
 
-@app.route("/admin")
+@app.route("/admin",methods=['GET','POST'])
 def admin():
+    return render_template("public/admin.html")
+
+@app.route("/eval",)
+def runeval():
+    file = open('/home/anant/ats-resumeparse/eval.py','r').read()
+    return exec(file)
+
+@app.route("/rank",)
+def runrank():
+    file = open('/home/anant/ats-resumeparse/rank.py','r').read()
+    return exec(file)
+
+@app.route("/results")
+def results():
     table = pd.read_csv(os.path.join( os.getcwd(), 'after_rank.csv' ))
     return render_template("public/templates/empty.html", data=table.to_html())
