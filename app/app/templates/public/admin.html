@@ -1,7 +1,6 @@
 {% extends "admin/templates/admin_template.html" %} {% block title %}Home{% endblock %} {% block main %}
 
-
-<div class="container">
+<!-- <div class="container">
     <button type="submit " class="btn btn-1 ">
         Run Evaluation
     </button>
@@ -11,6 +10,46 @@
     <button type="submit " class="btn btn-1 ">
         <a class="nav-link" href="/results">Results</a>
     </button>
+</div> -->
+
+<div class="row1">
+    <div class="column-1 box">
+        <h1>Evaluation</h1>
+        <p class="evaltext">
+            With our quick evaluation feature, hiring teams can identify the candidates who have the necessary skills and experience for any job in no time. You can organize data by your preference, set minimum requirements, and ultimately find better matches for
+            your growing team.
+        </p>
+        <button type="submit " class="btn btn-1 " id="runbutton">
+            Run Evaluation
+        </button>
+    </div>
+    <div class="column-2 box">
+        <img src="../../static/img/evaluationimage.png" width="100%" height="auto" class="image">
+    </div>
+</div>
+<div class="row2 ">
+    <div class="column-2 box">
+        <img src="../../static/img/rankimage.png" width="400px" height="auto" class="image">
+    </div>
+    <div class="column-1 box">
+        <h1>Ranking</h1>
+        <p class="evaltext">
+            When you’re an employer of choice, some job openings attract hundreds—even thousands—of applications. It’s a good hiring problem to have, but you need a way to effectively manage such a high-volume of resumes and CVs. Our ATS allows you to quickly rate,
+            rank, and sort your applicant pool to focus on top-quality candidates.
+        </p>
+        <button type="submit " class="btn btn-1 " id="runbutton">
+            Run Ranking
+        </button>
+
+    </div>
+</div>
+<div class="footer">
+    <p class="footertext">
+        Click Here To View Results &nbsp;&rarr;&nbsp;
+        <button type="submit " class="btn-1 resultButton">
+            <a class="nav-link resultText" href="/results" >Result</a>
+        </button>
+    </p>
 </div>
 
 {% endblock %}
