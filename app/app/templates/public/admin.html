@@ -12,6 +12,16 @@
     </button>
 </div> -->
 
+{% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <span>{{ message }}</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+        </div>
+{% endfor %} {% endif %} {% endwith %}
+
+
 <div class="row1">
     <div class="column-1 box">
         <h1>Evaluation</h1>
@@ -20,7 +30,7 @@
             your growing team.
         </p>
         <button type="submit " class="btn btn-1 " id="runbutton">
-            Run Evaluation
+            <a href="/eval"> Evaluation </a>
         </button>
     </div>
     <div class="column-2 box">
@@ -37,17 +47,17 @@
             When you’re an employer of choice, some job openings attract hundreds—even thousands—of applications. It’s a good hiring problem to have, but you need a way to effectively manage such a high-volume of resumes and CVs. Our ATS allows you to quickly rate,
             rank, and sort your applicant pool to focus on top-quality candidates.
         </p>
-        <button type="submit " class="btn btn-1 " id="runbutton">
-            Run Ranking
+        <button type="submit " class="btn btn-1 " id="runbutton" href="/rank">
+            <a href="/rank">Run Ranking</a>
         </button>
 
     </div>
 </div>
 <div class="footer">
     <p class="footertext">
-        Click Here To View Results &nbsp;&rarr;&nbsp;
+        Click Here To Download Results &nbsp;&rarr;&nbsp;
         <button type="submit " class="btn-1 resultButton">
-            <a class="nav-link resultText" href="/results" >Result</a>
+            <a class="nav-link resultText" href="/download" >Results</a>
         </button>
     </p>
 </div>

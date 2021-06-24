@@ -5,7 +5,7 @@ import pandas as pd
 
 import os
 
-from flask import render_template,request,redirect,flash
+from flask import render_template,request,redirect,send_from_directory,flash,url_for
 
 UPLOAD_FOLDER = os.getcwd()+"/uploads"
 test = "./"
@@ -39,17 +39,30 @@ def index():
 
 @app.route("/admin",methods=['GET','POST'])
 def admin():
+    if request.method == 'GET':
+        print(request)
     return render_template("public/admin.html")
+
+@app.route("/download",methods=['GET','POST'])
+def dl(): 
+    try:
+        return send_from_directory(os.getcwd(), filename="after_rank.csv", as_attachment=True)
+    except FileNotFoundError:
+        abort(404)
 
 @app.route("/eval",)
 def runeval():
     file = open('/home/anant/ats-resumeparse/eval.py','r').read()
-    return exec(file)
+    exec(file)
+    flash("Evaluation Complete!")
+    return redirect(url_for('admin'))
 
-@app.route("/rank",)
+@app.route("/rank",methods=['GET'])
 def runrank():
     file = open('/home/anant/ats-resumeparse/rank.py','r').read()
-    return exec(file)
+    exec(file)
+    flash("Ranking Completed Successfully! You can download results now.")
+    return redirect(url_for('admin'))
 
 @app.route("/results")
 def results():
