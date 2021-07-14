@@ -63,14 +63,14 @@ def dl():
 
 @app.route("/eval",)
 def runeval():
-    file = open('/home/anant/ats-resumeparse/eval.py','r').read()
+    file = open(os.path.join(os.getcwd(),os.pardir,"eval.py"),'r').read()
     exec(file)
     flash("Evaluation Complete!")
     return redirect(url_for('admin'))
 
 @app.route("/rank",methods=['GET'])
 def runrank():
-    file = open('/home/anant/ats-resumeparse/rank.py','r').read()
+    file = open(os.path.join(os.getcwd(),os.pardir,"rank.py"),'r').read()
     exec(file)
     flash("Ranking Completed Successfully! You can download results now.")
     return redirect(url_for('admin'))
