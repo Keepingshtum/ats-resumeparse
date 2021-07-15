@@ -64,7 +64,7 @@ def do_admin_login():
     #print(data[0]["admin"])
     if request.form.get('id') == '1' and request.form.get('password') == data[0]["user"]:
         session['logged_in'] = True
-        return redirect(url_for('home'))
+        return redirect(url_for('index'))
     if request.form.get('id') == '2' and request.form.get('password') == data[0]["admin"]:
         session['logged_in'] = True
         return redirect(url_for('admin'))
