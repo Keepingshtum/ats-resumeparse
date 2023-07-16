@@ -49,7 +49,8 @@ data["subsection"] = subsection
 data['sorting_column'] = data.urank*0.1 + data.crank*0.1 + data.skillexp*0.4+data.sc*(0.3/5)+data.totalexp*0.1
 cols = ['subsection', 'sorting_column']
 data['Rank'] = data.sort_values(cols, ascending=False).groupby(cols, sort=False).ngroup() + 1
-data.sort_values("Rank", inplace = True) 
+data.sort_values("Rank", inplace = True)
+print(data) 
 data.to_csv('after_rank.csv', index=False) 
   
  

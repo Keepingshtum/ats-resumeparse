@@ -4,6 +4,7 @@ import re
 import sys
 import tika
 from tika import parser
+tika.initVM()
 from datetime import datetime
 import ycalc
 from skill_parser import ResumeParser

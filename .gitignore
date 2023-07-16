@@ -101,3 +101,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+app/rank.csv
+app/after_rank.csv
